@@ -44,7 +44,7 @@ export default function LoginPage() {
                 };
                 const response = await login(payload);
                 setAuth(response.user, response.token);
-                navigate("/projects");
+                navigate("/dashboard");
               } catch (err: any) {
                 setError(err?.response?.data?.message || "Login failed");
               } finally {

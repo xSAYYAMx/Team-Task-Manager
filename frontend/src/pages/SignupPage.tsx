@@ -43,7 +43,7 @@ export default function SignupPage() {
                 };
                 const response = await signup(payload);
                 setAuth(response.user, response.token);
-                navigate("/projects");
+                navigate("/dashboard");
               } catch (err: any) {
                 setError(err?.response?.data?.message || "Signup failed");
               } finally {

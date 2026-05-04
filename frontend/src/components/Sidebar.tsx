@@ -1,4 +1,4 @@
-import { LayoutGrid, UserCircle, LogOut } from "lucide-react";
+import { LayoutGrid, UserCircle, LogOut, LayoutDashboard } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { cn } from "../utils/cn";
@@ -8,6 +8,7 @@ import { Modal } from "./ui/modal";
 import { Button } from "./ui/button";
 
 const navItems = [
+  { label: "Dashboard", to: "/dashboard", icon: LayoutDashboard },
   { label: "Projects", to: "/projects", icon: LayoutGrid }
 ];
 

@@ -78,9 +78,11 @@ export default function DashboardPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <h1 className="text-3xl font-semibold text-foreground">Dashboard</h1>
-        <p className="text-sm text-slate-500">
-          Keep a pulse on project execution and team throughput.
+        <h1 className="text-3xl font-semibold text-foreground">
+          Welcome back, {user?.name?.split(' ')[0] ?? 'Team'}! 👋
+        </h1>
+        <p className="mt-1 text-sm text-slate-500">
+          Here is a quick summary of your tasks and recent activity.
         </p>
       </motion.div>
 
